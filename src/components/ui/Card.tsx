@@ -15,7 +15,6 @@ export default function BasicCard({ icon, children, link, body }: CardProps) {
   return (
     <Card
       sx={{
-        minWidth: 255,
         boxShadow: '0px 8px #EE8A02',
         borderRadius: '20px',
         padding: 2,

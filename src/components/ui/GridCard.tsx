@@ -9,26 +9,60 @@ const GridCard = () => {
   return (
     <Grid
       container
-      spacing={1}
-      sx={{ justifyContent: 'space-evenly', paddingX: 8, alignItems: 'center' }}
+      sx={{
+        justifyContent: 'space-evenly',
+        paddingX: 10,
+        alignItems: 'end',
+        height: '95% ',
+      }}
+      spacing={{ xs: 2, md: 2, sm: 1 }}
+      columns={{ xs: 2, sm: 2, md: 4 }}
     >
-      <Grid item>
-        <Card icon={GraphicDesign} link={<Button to="#">More</Button>}>
+      <Grid item xs={1}>
+        <Card
+          icon={GraphicDesign}
+          link={
+            <Button href="#" color="textSecondary">
+              More
+            </Button>
+          }
+        >
           Graphic Design
         </Card>
       </Grid>
-      <Grid item>
-        <Card icon={webdesign} link={<Button to="#">More</Button>}>
+      <Grid item xs={1}>
+        <Card
+          icon={webdesign}
+          link={
+            <Button href="#" color="textSecondary">
+              More
+            </Button>
+          }
+        >
           Web Design
         </Card>
       </Grid>
-      <Grid item>
-        <Card icon={software} link={<Button to="#">More</Button>}>
+      <Grid item xs={1}>
+        <Card
+          icon={software}
+          link={
+            <Button href="#" color="textSecondary">
+              More
+            </Button>
+          }
+        >
           Software
         </Card>
       </Grid>
-      <Grid item>
-        <Card icon={application} link={<Button to="#">More</Button>}>
+      <Grid item xs={1}>
+        <Card
+          icon={application}
+          link={
+            <Button href="#" color="textSecondary">
+              More
+            </Button>
+          }
+        >
           Application
         </Card>
       </Grid>
