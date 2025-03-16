@@ -1,38 +1,43 @@
-import { Grid, Grid2 } from '@mui/material';
-import React from 'react';
+import { Grid } from '@mui/material';
 import CardTypo from './CardTypo';
 
 const GridTypo = () => {
   return (
-    <Grid2
+    <Grid
       container
-      rowSpacing={1}
-      columnSpacing={{ xs: 2, sm: 2, md: 2, lg: 2 }}
+      sx={{
+        width: '50%',
+        justifyContent: 'space-between',
+        paddingX: '1em',
+        alignItems: 'center',
+        // flexWrap: { md: 'wrap', sm: 'wrap', lg: 'nowrap' },
+      }}
+      wrap="wrap"
+      columnSpacing={{ lg: 4, md: 1, sx: 1 }}
     >
-      <Grid size={6}>
+      <Grid item xs={6}>
         <CardTypo title="2019">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.
         </CardTypo>
-      </Grid>
-      <Grid size={6}>
+
         <CardTypo title="2020">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.
         </CardTypo>
       </Grid>
-      <Grid size={6}>
+      <Grid item xs={6}>
         <CardTypo title="2021">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           officia deserunt mollit anim id est laborum.
         </CardTypo>
-      </Grid>
 
-      <CardTypo title="2022">
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.
-      </CardTypo>
-    </Grid2>
+        <CardTypo title="2022">
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+        </CardTypo>
+      </Grid>
+    </Grid>
   );
 };
 

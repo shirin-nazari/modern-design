@@ -7,7 +7,7 @@ interface PropsType {
 }
 const CardTypo = ({ title, children }: PropsType) => {
   return (
-    <Box sx={{ color: 'white', width: '20%', padding: '0.5em' }}>
+    <Box sx={{ color: 'white', width: '100%', padding: '0.5em' }}>
       <Typography
         sx={{ fontWeight: 'bold', paddingBottom: '.5em' }}
         variant="h2"

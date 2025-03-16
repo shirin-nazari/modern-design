@@ -7,13 +7,14 @@ const Section2 = () => {
     <Box
       sx={{
         width: '100%',
-        height: '100vh',
         backgroundColor: '#F4B82A',
-        paddingY: 4,
+        paddingTop: '4rem',
+        display: 'flex',
+        flexWrap: { md: 'wrap', sm: 'wrap', lg: 'nowrap' },
       }}
     >
       <GridTypo />
-      <img src={newWoman} alt="" style={{ width: '80%', height: '100%' }} />
+      <img src={newWoman} alt="" style={{ width: '50%', height: '100%' }} />
     </Box>
   );
 };
