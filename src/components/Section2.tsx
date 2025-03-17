@@ -6,14 +6,21 @@ const Section2 = () => {
   return (
     <Box
       sx={{
-        width: '100%',
+        // width: '100%',
         backgroundColor: '#F4B82A',
         paddingTop: '4rem',
         display: 'flex',
-        flexWrap: { md: 'wrap', sm: 'wrap', lg: 'nowrap' },
+        flexWrap: {
+          md: 'wrap',
+          sm: 'wrap',
+          xs: 'wrap',
+          xl: 'nowrap',
+          lg: 'nowrap',
+        },
       }}
     >
       <GridTypo />
+
       <img src={newWoman} alt="" style={{ width: '50%', height: '100%' }} />
     </Box>
   );

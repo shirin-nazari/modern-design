@@ -20,6 +20,7 @@ export default function Button(props: AnchorProps | ButtonProps) {
           fontSize: '1em',
           fontWeight: 'bold',
           textUnderlineOffset: '0.3em',
+          paddingX: '0.3em',
         }}
         {...props}
       ></Link>
